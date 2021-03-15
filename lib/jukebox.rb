@@ -35,6 +35,7 @@ def play(songs)
   songs.each do |song|
     if user_response == song
       puts "Playing #{user_response}"
+      elsif user_response != "1" || user_response != "2" || user_response != "3"
     end
   end
   if user_response == "1"
