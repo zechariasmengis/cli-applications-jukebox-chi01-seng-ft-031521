@@ -35,7 +35,6 @@ def play(songs)
     songs.each_with_index do |song, index|
       if user_response == index
         selected_song = user_response
-        binding.pry
       end
     end
   end
