@@ -26,6 +26,7 @@ def list(songs)
     puts listed_song
   end
 end
+binding.pry
 
 def play(songs)
   puts "Please enter a song name or number:"
@@ -33,7 +34,7 @@ def play(songs)
   
   if 1 <= user_response <= 9
     songs.each do |song|
-      binding.pry
+      
     end
   end
 end
