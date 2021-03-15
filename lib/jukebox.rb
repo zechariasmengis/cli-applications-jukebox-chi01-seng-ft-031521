@@ -50,7 +50,7 @@ end
 
   
 def run(songs)
-  help
+  
   input = prompt
   
   while input != "exit"
