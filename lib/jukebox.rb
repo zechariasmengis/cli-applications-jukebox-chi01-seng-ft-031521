@@ -31,16 +31,14 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
   
+  
+  songs.each do |song|
+    if user_response == song
+      puts "Playing #{user_response}"
+    end
+  end
   if user_response == "1"
     puts "Playing Phoenix - 1901"
-    elsif user_response.to_i > 9 || user_response.to_i < 1
-    puts "Invalid input, please try again"
-  else
-    songs.each do |song|
-      if user_response == song
-        puts "Playing #{user_response}"
-      end
-    end
   end
   
   
