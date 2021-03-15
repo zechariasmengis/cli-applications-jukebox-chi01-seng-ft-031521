@@ -12,7 +12,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def help()
+def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
@@ -28,7 +28,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  input = gets.chomp()
+  input = gets.strip()
   
   if (1..9).to_a.index(input.to_i) != nil
     puts "Playing #{songs[input.to_i - 1]}"
@@ -39,38 +39,37 @@ def play(songs)
   end
 end
 
-def exit_jukebox()
+def exit_jukebox
   puts "Goodbye"
 end
 
-def prompt()
+def prompt
   puts "Please enter a command:"
-  gets.chomp()
+  gets.strip
 end
 
   
 def run(songs)
-  help()
-  input = prompt()
+  help
+  input = prompt
   
   while input != "exit"
     if input == "list"
       list(songs)
-      input = prompt()
+      input = prompt
     elsif input == "play"
       play(songs)
-      input = prompt()
+      input = prompt
     elsif input == "help"
-      help()
-      input = prompt()
+      help
+      input = prompt
     else
       puts "Invalid command"
-      help()
-      input = prompt()
+      help
+      input = prompt
     end
   end
   exit_jukebox
-  
 end
 
 
