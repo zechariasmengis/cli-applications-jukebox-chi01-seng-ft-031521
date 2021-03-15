@@ -33,7 +33,8 @@ def play(songs)
   
   if user_response == "1"
     puts "Playing Phoenix - 1901"
-    elsif user_response.to_i 
+    elsif user_response.to_i > 9 || user_response.to_i < 1
+    puts "Invalid input, please try again"
   else
     songs.each do |song|
       if user_response == song
