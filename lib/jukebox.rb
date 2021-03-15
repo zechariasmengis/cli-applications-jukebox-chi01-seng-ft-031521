@@ -31,7 +31,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
   
-  if user_response == 
+  if 1 <= user_response <= 9
 end
 
 
