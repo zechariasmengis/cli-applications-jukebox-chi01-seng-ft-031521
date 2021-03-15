@@ -26,7 +26,6 @@ def list(songs)
     puts listed_song
   end
 end
-binding.pry
 
 def play(songs)
   puts "Please enter a song name or number:"
