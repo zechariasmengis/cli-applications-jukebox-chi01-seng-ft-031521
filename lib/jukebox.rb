@@ -31,7 +31,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
   
-  if 1 <= user_response <= 9
+  if 1 <= user_response.to_i <= 9
     songs.each_with_index do |song, index|
       if user_response == index
         selected_song = user_response
