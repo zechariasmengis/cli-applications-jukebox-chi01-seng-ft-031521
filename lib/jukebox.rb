@@ -33,6 +33,7 @@ def play(songs)
   
   if user_response == "1"
     puts "Playing Phoenix - 1901"
+    elsif user_response.to_
   else
     songs.each do |song|
       if user_response == song
