@@ -22,6 +22,7 @@ end
 
 def list(songs)
   songs.each_with_index do |song, index|
+    potato = "#{index}. #{song}"
     binding.pry
   end
 end
