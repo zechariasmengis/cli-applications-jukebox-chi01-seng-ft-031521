@@ -12,11 +12,8 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-
-
-
 def help()
-  puts "I accept the following commands:"
+  puts "Please enter a command:"
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
@@ -28,13 +25,6 @@ def list(songs)
     puts "#{index+1}. #{song}"
   end
 end
-
-#list(songs)
-
-# THE PLAY METHOD
-# This method also takes in an argument of the songs array. It first puts out the prompt: "Please enter a song name or number:". It then stores the user's response using gets.chomp.
-
-# If the user's response is a valid song number or song name, the method should puts out: "Playing <song name>". Otherwise, it should puts out: "Invalid input, please try again".
 
 def play(songs)
   puts "Please enter a song name or number:"
