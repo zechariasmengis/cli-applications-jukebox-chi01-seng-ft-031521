@@ -29,13 +29,9 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  user = gets.strip
-  str = list(songs).join(" ")
-  if str.include?(user)
-    puts "Playing " + user
-  else
-    puts "Invalid input, please try again"
-  end
+  user_response = gets.strip
+  
+  if 1 <= user_response <= 9
 end
 
 
