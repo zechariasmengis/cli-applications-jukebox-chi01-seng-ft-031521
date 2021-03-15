@@ -54,7 +54,7 @@ def run(songs)
   input = prompt()
   
   if input == "exit"
-    puts "Please enter a command:"
+    exit_jukebox()
   end
   
   while input != "exit"
