@@ -32,7 +32,8 @@ def play(songs)
   user_response = gets.strip
   
   if user_response == "1"
-    puts "Playing "
+    puts "Playing Phoenix - 1901"
+  end
 end
 
 
