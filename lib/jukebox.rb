@@ -52,6 +52,9 @@ end
 def run(songs)
   help()
   input = prompt()
+  if input == "exit"
+    exit_jukebox()
+  end
   
   while input != "exit"
     if input == "list"
@@ -69,9 +72,7 @@ def run(songs)
       input = prompt()
     end
   end
-  if input == "exit"
-    exit_jukebox()
-  end
+  
 end
 
 
