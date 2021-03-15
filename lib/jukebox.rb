@@ -32,6 +32,10 @@ def play(songs)
   user_response = gets.strip
   
   if 1 <= user_response <= 9
+    songs.each do |song|
+      binding.pry
+    end
+  end
 end
 
 
