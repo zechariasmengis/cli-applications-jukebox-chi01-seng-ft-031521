@@ -22,14 +22,17 @@ end
 
 def list(songs)
   songs.each_with_index do |song, index|
-    potato = "#{index + 1}. #{song}"
-    #binding.pry
-    puts potato
+    listed_song = "#{index + 1}. #{song}"
+    puts listed_song
   end
 end
 
-def play
+def play(songs)
+  puts "Please enter a song name or number:"
+  gets.strip
+  user_response = gets.strip
   
+  if user_response == 
 end
 
 
