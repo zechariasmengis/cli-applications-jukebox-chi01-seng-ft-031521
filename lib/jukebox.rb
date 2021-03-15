@@ -19,7 +19,7 @@ def help
 end
 
 def list(songs)
-  
+  songs.each
 end
 
 def play
