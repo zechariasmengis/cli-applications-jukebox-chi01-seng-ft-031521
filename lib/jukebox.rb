@@ -33,8 +33,10 @@ def play(songs)
   user_response = gets.strip
   
   if 1 <= user_response <= 9
-    songs.each do |song|
-      
+    songs.each_with_index do |song, index|
+      if user_response == index
+        selected_song = user_response
+      end
     end
   end
 end
